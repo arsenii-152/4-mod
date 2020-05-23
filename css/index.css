@@ -14,13 +14,21 @@
   position: relative;
   padding: 0 207px 0 207px;
 }
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+a:link {
+  color: #FFF;
+}
 nav {
+  position: fixed;
   background-color: black;
   width: 100%;
   height: 90px;
-  position: relative;
   padding-top: 27px;
   padding-bottom: 27px;
+  z-index: 1;
 }
 li {
   font-family: Ubuntu;
@@ -30,10 +38,50 @@ li {
   font-size: 30px;
   line-height: 36px;
   margin-right: 64px;
+  transition: 1000ms;
+  cursor: default;
+}
+.about:hover {
+  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #0B2349;
+}
+.schedule:hover {
+  background: linear-gradient(45deg, #D2CF3A , #ACDA40 , #E0E339);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #0B2349;
+}
+.place:hover {
+  background: linear-gradient(45deg, #E6E438 , #A4EF43 , #2DFF7A);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #0B2349;
+}
+.posters:hover {
+  background: linear-gradient(45deg, #32FF9B , #35FFAB , #39FECA);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #0B2349;
+}
+.clothes:hover {
+  background: linear-gradient(45deg, #39F8E9 , #39C9FF , #6754E9);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #0B2349;
+}
+.about {
+  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 ul {
   text-align: center;
 }
+
+/*навигация*/
+
 .pictureOne {
   width: 100%;
   background-size: contain;
@@ -62,11 +110,16 @@ h1 {
   border-radius: 69px;
   width: 516px;
   height: 110px;
-  border: 1px solid black;
+  border: 1px solid white;
   left: 50%;
   margin-right: -50%;
   margin-top: -64px;
   transform: translate(-50%, -50%)
+}
+.btn:hover {
+  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
+  background-size: 200% 200%;
+  animation: gradient 3000ms ease infinte;
 }
 .date {
   text-align: center;
@@ -82,7 +135,6 @@ h1 {
   padding-bottom: 21px;
   width: 1190px;
   height: 789px;
-  background-color: red;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -95,11 +147,12 @@ h1 {
 .slide1 {
   width: 37px;
   height: 37px;
-  background: #FFFFFF;
   border-radius: 50px;
   display: inline-block;
   transform: translate3d(504px, 731px, 0);
   margin-right: 25px;
+  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
+
 }
 .slide2 {
   width: 37px;
@@ -119,7 +172,45 @@ h1 {
   transform: translate3d(504px, 731px, 0);
   margin-right: 25px;
 }
-.arrow-left{
-
+.arrow-left {
+  transform: translate3d(250px, 728px, 0);
 }
-.arrow-right
+.arrow-right {
+  transform: translate3d(454px, 728px, 0);
+}
+.info-first {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+  transform: translateY(-347px);
+}
+h3 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #7E7E7E;
+  transform: translateY(-211px);
+}
+.portfolio {
+  margin-bottom: 228px;
+}
+.partners
+@keyframes gradient {
+    0% {
+      background-position: 0 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+}
+}
