@@ -117,9 +117,8 @@ h1 {
   transform: translate(-50%, -50%)
 }
 .btn:hover {
-  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
-  background-size: 200% 200%;
-  animation: gradient 3000ms ease infinte;
+  background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+  animation: background 2s infinite alternate;
 }
 .date {
   text-align: center;
@@ -151,7 +150,8 @@ h1 {
   display: inline-block;
   transform: translate3d(504px, 731px, 0);
   margin-right: 25px;
-  background: linear-gradient(45deg, #FF2525 , #FBC332 , #A9DA40);
+  background: linear-gradient(180deg, #FF2525 , #FBC332 , #A9DA40);
+  background-size: 200% 200%;
 
 }
 .slide2 {
@@ -201,16 +201,34 @@ h3 {
 .portfolio {
   margin-bottom: 228px;
 }
-.partners
-@keyframes gradient {
-    0% {
-      background-position: 0 50%
-    }
-    50% {
-      background-position: 100% 50%
-    }
-    100% {
-      background-position: 0% 50%
-    }
+.vk {
+  position: absolute;
+  width: 121px;
+  height: 121px;
+  margin-right: 38px;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: -334px;
+  transform: translate(-110%, -50%);
+
 }
+.hse {
+  position: absolute;
+  width: 121px;
+  height: 121px;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: -334px;
+  transform: translate(10%, -50%);
+
+}
+.partners {
+  transform: translateY(-181px);
+}
+.logos {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: -100px;
+  transform: translate(-50%, -50%)
 }
