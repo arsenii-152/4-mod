@@ -117,8 +117,7 @@ h1 {
   transform: translate(-50%, -50%)
 }
 .btn:hover {
-  background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
-  animation: background 2s infinite alternate;
+  background: linear-gradient(90deg, #FF2525 , #FBC332 , #A9DA40);
 }
 .date {
   text-align: center;
@@ -129,55 +128,7 @@ h1 {
   line-height: 52px;
   color: #000000;
 }
-.slider {
-  position: relative;
-  padding-bottom: 21px;
-  width: 1190px;
-  height: 789px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-top: 467px;
-  background-image: url(../img/img-slider.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.slide1 {
-  width: 37px;
-  height: 37px;
-  border-radius: 50px;
-  display: inline-block;
-  transform: translate3d(504px, 731px, 0);
-  margin-right: 25px;
-  background: linear-gradient(180deg, #FF2525 , #FBC332 , #A9DA40);
-  background-size: 200% 200%;
 
-}
-.slide2 {
-  width: 37px;
-  height: 37px;
-  background: #FFFFFF;
-  border-radius: 50px;
-  display: inline-block;
-  transform: translate3d(504px, 731px, 0);
-  margin-right: 25px;
-}
-.slide3 {
-  width: 37px;
-  height: 37px;
-  background: #FFFFFF;
-  border-radius: 50px;
-  display: inline-block;
-  transform: translate3d(504px, 731px, 0);
-  margin-right: 25px;
-}
-.arrow-left {
-  transform: translate3d(250px, 728px, 0);
-}
-.arrow-right {
-  transform: translate3d(454px, 728px, 0);
-}
 .info-first {
   font-family: Montserrat;
   font-style: normal;
@@ -231,4 +182,17 @@ h3 {
   margin-right: -50%;
   margin-top: -100px;
   transform: translate(-50%, -50%)
+}
+.swiper-container {
+    margin-top: 500px;
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 1190px;
+    height: 789px;
+    z-index: 0  ;
+}
+.swiper-button:hover {
+  background-color: red;
 }
